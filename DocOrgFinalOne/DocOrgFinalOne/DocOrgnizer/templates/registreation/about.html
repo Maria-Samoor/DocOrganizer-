@@ -1,0 +1,68 @@
+<!-- DocOrgnizer/templates/registration/base.html -->
+{% extends 'home.html' %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+    <style>
+        .developer-box {
+            background-color: #f4f4f4;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .developer-image {
+            max-width: 90%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="columns">
+            <!-- Developer 1 -->
+            <div class="column is-one-third">
+                <div class="developer-box">
+                    <img src="t1.jpeg" alt="Developer 1" class="developer-image">
+                    <p>
+                        Maria Abu Samoor, Computer Systems Engineering steudent. Jane is passionate about creating beautiful and
+                        user-friendly interfaces. With years of experience, she brings creativity and innovation
+                        to every project.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Developer 2 -->
+            <div class="column is-one-third">
+                <div class="developer-box">
+                    <img src="t.jpeg" alt="Developer 2" class="developer-image">
+                    <p>
+                        John Smith is our backend guru. He loves solving complex problems and optimizing
+                        server-side processes. John's expertise ensures our applications run smoothly and efficiently.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Developer 3 -->
+            <div class="column is-one-third">
+                <div class="developer-box">
+                    <img src="t.jpeg" alt="Developer 3" class="developer-image">
+                    <p>
+                        Mary Johnson, our full-stack developer, is a versatile talent. She enjoys working on both
+                        frontend and backend aspects, creating seamless and integrated solutions for our users.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+{% endblock %}
